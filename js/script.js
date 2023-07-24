@@ -2,7 +2,7 @@
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
-// Import 
+// Import HTML classes
 const scoreText = document.querySelector('.score');
 const score = document.querySelector('.score_value');
 const finalScore = document.querySelector('.final_score > span');
@@ -17,9 +17,8 @@ const height = canvas.height;
 const audio = new Audio('../assets/audio.mp3');
 audio.volume = 0.2;
 
-const size = 30;
-const initalPosition = { x: 300, y: 270 };
-
+const size = 30; // Size of one part of the snake, and food size
+const initalPosition = { x: 300, y: 270 }; // Initial position of the snake
 let snake = [initalPosition];
 
 // increment the score by 5
